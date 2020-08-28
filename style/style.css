@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.6em;
+    line-height: 1.6rem;
     font-family: 'Baloo Tamma 2', cursive;
 }
 
@@ -10,139 +10,168 @@
 
 /* Navbar */
 nav img {
-    height: 55px;
+    padding-top: 30px;
+}
 
+nav #logo {
+    font-size: 2.5rem;
+    color: #696b6a;
+    padding-top: 10px;
 }
 
 .navbar {
-    background-color: rgb(145, 233, 204);
-    font-size: 1.6rem;
+    background-color: #9fb9b7;
+    font-size: 2.2rem;
 }
+
 
 
 /* Home */
-#home{
-height: 100vh;
-background: url("../img/pexels-ylanite-koppens-934062.jpg");
-background-size: cover;
-background-position: 46%; 
+#home {
+    height: 100vh;
+    background: url("../img/pexels-ylanite-koppens-934062.jpg");
+    background-size: cover;
+    background-position: 46%;
 }
 
-#textTitle{
+#textTitle {
     padding-top: 225px;
-    margin: 0  auto;
+    margin: 0 auto;
     width: 70%;
 }
 
-#home h1{
+#home h1 {
     font-weight: 100;
-    color: #374945 ;
+    color: #374945;
     text-align: right;
     font-size: 4rem;
 }
 
 
 
-/* Projects */
+/* Projects and skills*/
 #projects h2,
-#skills h2{
+#skills h2 {
     font-size: 5rem;
     text-align: center;
     font-weight: 100;
-    color: #535756 ;
-    text-shadow: 2px 2px #858887;
+    color: #535756;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2),
+        0px -5px 25px rgba(255, 255, 255, 0.3);
     padding-top: 6rem;
 }
 
-#projects .card-group .card{
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
 }
 
-#projects, 
-#skills {   
-background: #f3f3f1;
-background-size: cover;
-background-position: 46% ; 
-padding-bottom: 75px;
+#projects,
+#skills {
+    background: #f3f3f1;
+    background-size: cover;
+    background-position: 46%;
+    padding-top: 25px;
+}
+
+#skills {
+    padding-bottom: 55px;
 }
 
 #projects .btn {
     width: 80px;
     margin-right: 25px;
-    background-color: rgb(145, 233, 204);
-    border: 0px; 
-    color: #535756;   
- }
+    background-color: #9fb9b7;
+    border: 0px;
+    color: #535756;
+}
 
- #projects .btn:hover {
+#projects .btn:hover {
     width: 80px;
     margin-right: 25px;
-    background-color: rgb(109, 172, 151);
-    border: 0px;   
-    color: white; 
- }
- 
- .card-text{
-    padding-bottom: 25px;
- }
+    background-color: rgb(184, 223, 210);
+    border: 0px;
+    color: white;
+}
 
- #projects .buttons {
-    position: absolute; 
+#skills .card-title {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#skills .card-body {
+    padding-bottom: 0;
+
+}
+
+.card-text {
+    padding-bottom: 25px;
+}
+
+#projects .buttons {
+    position: absolute;
     bottom: 15px;
- }
+}
 
 
 
 /* Contact */
 #contact {
-    background-color: #82A3A0;
+    background-color: #9fb9b7;
     padding: 30px 0 25px 0;
     color: #374945;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2),
+    0px -5px 25px rgba(255, 255, 255, 0.3);
 }
 
-#contact .row div{
+#contact .row div {
     margin: auto;
 }
 
-#contact a{
+#contact a {
     color: #374945;
     font-size: 60px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2),
+    0px -5px 25px rgba(255, 255, 255, 0.3);
 }
 
-#contact a:hover{
+#contact a:hover {
     text-decoration: none;
     color: #dbdbdb;
 }
 
 
 
-
+/* media querie for mobile phones */
 @media screen and (max-width: 420px) {
-    #home h1{
+
+    #home h1 {
         font-size: 3rem;
     }
 
-    #textTitle{
+    #textTitle {
         padding-top: 175px;
         width: 90%;
     }
 
-    #contact a{
-        font-size: 25px;
+
+
+    #contact a {
+        font-size: 45px;
     }
 
-    #contact h2{
+    #contact h2 {
         font-size: 50px;
     }
 
     #projects h2,
-    #skills h2{
-    padding-top: 2rem;
-    padding-bottom: 0;
+    #skills h2 {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    #projects {
+        padding-bottom: 0;
+    }
+
 }
-#projects{
-    padding-bottom: 0;
-}
-    
-  }
